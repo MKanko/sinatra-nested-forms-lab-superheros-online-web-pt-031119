@@ -1,42 +1,20 @@
-<h1><%= @team %></h1><br>
+<h1><%= @team %></h1>
 
-<h2><%= @motto %></h2><br>
+<h2>Team Motto: <%= @motto %></h2>
 
 <% @hero_names.each.with_index do |name, index| %>
 
     <div class="member">
-        <h2>Hero Name: <%= name %></h2><br>
-        <p>Hero Power: <%= @hero_powers[index] %><br>
-        <p>Hero Biography: <%= @hero_bios[index] %><br>
+        <h2>Hero Name: <%= name %></h2>
+        <p>Hero Power: <%= @hero_powers[index] %>
+        <p>Hero Biography: <%= @hero_bios[index] %>
     </div>
 
 <% end %> 
 
-<!-- Issue with NoMethodError:
-     undefined method `join' for #<String:0x00007fffebd2e090>  "a dependency issue"
-     see -  https://github.com/sinatra/sinatra/issues/ -->
 
 
-<!--
-<% @member_1 = @members[0] %>
-    <div class="member">
-        <h2>Hero Name: <%= @member_1.name %></h2><br>
-        <p>Hero Power: <%= @member_1.power %></p><br>
-        <p>Hero Biography: <%= @member_1.bio %></p><br>
-    </div><br>
 
-<% @member_2 = @members[1] %>
-    <div class="member">
-        <h2>Hero Name: <%= @member_2.name %></h2><br>
-        <p>Hero Power: <%= @member_2.power %></p><br>
-        <p>Hero Biography: <%= @member_2.bio %></p><br>
-    </div><br>
 
-<% @member_3 = @members[2] %>
-    <div class="member">
-        <h2>Hero Name: <%= @member_3.name %></h2><br>
-        <p>Hero Power: <%= @member_3.power %></p><br>
-        <p>Hero Biography: <%= @member_3.bio %></p><br>
-    </div><br>-->
 
 
