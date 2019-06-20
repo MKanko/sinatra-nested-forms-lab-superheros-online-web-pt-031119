@@ -1,22 +1,25 @@
-<h1><%= @team %></h1>
+<h1><%= @team %></h1><br>
 
-<h2><%= @motto %>
+<h2><%= @motto %></h2><br>
 
-<!-- iterate through attribute arrays from controller using each with index -->
+<!--<%= binding.pry %>--> 
 
-
-<!--
 <% @hero_names.each.with_index do |name, index| %>
 
-    @hero_powers[index]                  just an example, syntax not complete
-    @hero_bios[index] 
+<%= binding.pry %>
 
-    <h2>Hero Name: <%= name %></h2>      just an example, syntax not complete
-
-       use this iteration to "piggy back" index updating 
+    <div class="member">
+        <h2>Hero Name: <%= name %></h2><br>
+        <p>Hero Power: <%= @hero_powers[index] %><br>
+        <p>Hero Biography: <%= @hero_bios[index] %><br>
+    </div>
+     
+<!-- iterate through attribute arrays from controller using each with index -->
+         
+ <!--use this iteration to "piggy back" index updating 
  to assign/grab values of those indexes from other two arrays. Then use this index
  to build out each team member below using the values accessed from the each with index
- iteration.-->
+ iteration.
 
 
 
@@ -39,6 +42,6 @@
         <h2>Hero Name: <%= @member_3.name %></h2><br>
         <p>Hero Power: <%= @member_3.power %></p><br>
         <p>Hero Biography: <%= @member_3.bio %></p><br>
-    </div><br>
+    </div><br>-->
 
 
